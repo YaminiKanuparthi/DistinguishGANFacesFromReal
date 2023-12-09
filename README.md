@@ -24,6 +24,7 @@ All images combined are used as [Final Dataset](https://drive.google.com/file/d/
         *   Implemented in colab
         *   Change the path to directories
         *   Train the model
+        *   Final Model Checkpoints: [vit_model.pth](https://drive.google.com/file/d/17GV8Eg91kTeDVhAx800X_wIL6VXbVae8/view?usp=sharing), [vit_model_finetuned.pth](https://drive.google.com/file/d/1-xnZuB5zX-IxCGchqFnQuTxZD8s067tw/view?usp=sharing)
 2.  **CvT**:
     *   _**Datasets Used**_: 140k Real vs Fake
     *   _**Implementation**_:
@@ -31,6 +32,7 @@ All images combined are used as [Final Dataset](https://drive.google.com/file/d/
         *   Implemented in colab
         *   Change the path to directories
         *   Train the models
+        *   Final Model Checkpoints: [CNNViT_model.pth](https://drive.google.com/file/d/1Bm_UxzUQKNQrHj3gMHEhKAqTkLuh2Wi1/view?usp=sharing)
 3.  **LeViT**:
     *   _**Datasets Used**_: Combined (Final)
     *   _**Implementation**_:
@@ -50,6 +52,7 @@ All images combined are used as [Final Dataset](https://drive.google.com/file/d/
                     *   `python ./classifer.py train resnet /content/drive/MyDrive/ML\ Project\ -\ Dump/GANDCTAnalysis/Dataset/tfrecords/realvsfake_merged_cropped_color_raw_normalized_train_tf/data.tfrecords /content/drive/MyDrive//ML\ Project\ -\ Dump/GANDCTAnalysis/Dataset/tfrecords/realvsfake_merged_cropped_color_raw_normalized_val_tf/data.tfrecords -b 32 -e 100 --l2 0.01 --classes 2 --image_size 128`
                 *   Test:
                     *   `python ./classifer.py test /content/drive/MyDrive/GANDCTAnalysis/final_models/resnet_2023-11-28-22-01-11_batch_32_learning_rate_0.001/saved_modeel.pb content/drive/MyDrive/ML\ Project\ -\ Dump/GANDCTAnalysis/Dataset/tfrecords_dct/realvsfake_merged_cropped_color_dct_log_scaled_normalized_test_tf/data.tfrecords -b 32 --image_size 128`
+            * Model Checkpoints: [Google Drive](https://drive.google.com/drive/folders/1-OHov_GUSMN1u-R-kou16CxjAHFReuOx?usp=sharing)
         2.  DFT:
             *   inspired by [Unmasking DeepFake with simple Features](https://github.com/cc-hpc-itwm/DeepFakeDetection/tree/master)
             *   Extract the images
