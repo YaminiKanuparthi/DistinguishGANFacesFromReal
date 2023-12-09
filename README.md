@@ -20,24 +20,29 @@ All images combined are used as [Final Dataset](https://drive.google.com/file/d/
 1.  **ViT**:
     *   _**Datasets Used**_: 140k Real vs Fake
     *   _**Implementation**_:
+        *   [HugginFace ViT](https://huggingface.co/docs/transformers/model_doc/vit#vision-transformer-vit)
         *   Implemented in colab
         *   Change the path to directories
         *   Train the model
 2.  **CvT**:
     *   _**Datasets Used**_: 140k Real vs Fake
     *   _**Implementation**_:
+        *   [HugginFace CvT](https://huggingface.co/docs/transformers/model_doc/cvt#convolutional-vision-transformer-cvt)
         *   Implemented in colab
         *   Change the path to directories
         *   Train the models
 3.  **LeViT**:
     *   _**Datasets Used**_: Combined (Final)
     *   _**Implementation**_:
+        *   Models used
+            1.  [LeViT](https://huggingface.co/docs/transformers/model_doc/levit#transformers.LevitForImageClassification)
+            2.  [LeViT(With Knowledge Distillation)](https://huggingface.co/docs/transformers/model_doc/levit#transformers.LevitForImageClassificationWithTeacher)
         *   Implemented in the local repository
 4.  **DCT/DFT**:
     *   _**Datasets Used**_: 140k Real vs Fake
     *   _**Implementation**_:
         1.  DCT:
-            *   Using \[GANDCTAnalysis\](https://github.com/RUB-SysSec/GANDCTAnalysis/tree/master)
+            *   Using [GANDCTAnalysis](https://github.com/RUB-SysSec/GANDCTAnalysis/tree/master)
             *   Used DCT conversion
                 *   `python3 .\prepare_dataset.py "C:\Users\dmpoo\OneDrive\Desktop\Harshita\realvsfake_merged_cropped" -lnc tfrecords`
             *   Using models: resnet
