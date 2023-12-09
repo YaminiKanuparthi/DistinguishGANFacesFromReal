@@ -38,8 +38,10 @@ All images combined are used as [Final Dataset](https://drive.google.com/file/d/
     *   _**Implementation**_:
         *   Models used
             1.  [LeViT](https://huggingface.co/docs/transformers/model_doc/levit#transformers.LevitForImageClassification)
+                *   [Version 1](https://github.com/HarshitaDPoojary/DistinguishGANFacesFromReal/blob/main/Analysis/Transformer%20Analysis/LeVit.ipynb): Trained on 140k Real vs fake
+                *   [Version 2](https://github.com/HarshitaDPoojary/DistinguishGANFacesFromReal/blob/main/Analysis/Transformer%20Analysis/LeVit_scratch.ipynb): Trained on Combine Dataset
             2.  [LeViT(With Knowledge Distillation)](https://huggingface.co/docs/transformers/model_doc/levit#transformers.LevitForImageClassificationWithTeacher)
-        *   Implemented in the local repository
+        *   
 4.  **DCT/DFT**:
     *   _**Datasets Used**_: 140k Real vs Fake
     *   _**Implementation**_:
